@@ -1,0 +1,28 @@
+{
+  "name": "campus-pmes",
+  "version": "1.0.0",
+  "description": "Campus Project Management & Evaluation System (Campus PMES) - Career Point University",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "render-build": "npm --prefix server install && npm --prefix client install && npm --prefix client run build",
+    "start": "node server/server.js",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "npm --prefix server run dev",
+    "test": "npm --prefix server run test",
+    "seed": "npm --prefix server run seed"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mern",
+    "academic",
+    "project-management",
+    "evaluation",
+    "cpu-kota"
+  ],
+  "author": "Arpit Saini",
+  "license": "ISC"
+}

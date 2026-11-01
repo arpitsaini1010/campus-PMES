@@ -84,7 +84,7 @@ const runAcceptanceTests = async () => {
       method: 'POST',
       body: { 
         email: process.env.ADMIN_EMAIL || 'admin@cpur.in', 
-        password: process.env.ADMIN_PASSWORD || 'Admin@12345' 
+        password: process.env.ADMIN_PASSWORD || DYNAMIC_TEST_PASS 
       }
     });
     assert(adminLogin.status === 200 && adminLogin.data.token, 'Admin Login Authenticates Successfully');
